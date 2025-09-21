@@ -39,7 +39,7 @@ export default function Home(){
 
     <div className="bg-purple-3 rounded-2xl drop-shadow-sm md:max-w-[57rem] space-y-2 mx-auto p-5 pt-8 md:p-10 md:px-24 text-center my-10">
         <h1 className="text-lg md:text-2xl leading-5 md:leading-normal font-semibold text-purple-dark">Virtual Gifting With A Personal Touch</h1>
-        <p className="text-xxs md:text-xs max-w-lg mx-auto text-pretty">You can't always be there in person for special celebrations, but you can always send your regards and congratulations through email or text. <span className="italic">It's the thought that counts!!</span> Through Moola, you can send gifts from big and niche brands to your loved ones instantly.</p>
+        <p className="text-xxs md:text-xs max-w-lg mx-auto text-pretty">You can&apos;t always be there in person for special celebrations, but you can always send your regards and congratulations through email or text. <span className="italic">It's the thought that counts!!</span> Through Moola, you can send gifts from big and niche brands to your loved ones instantly.</p>
 
         <div className="md:grid grid-cols-[1fr_auto_1fr] place-items-center md:text-left mt-5">
             <div className="space-y-2 md:space-y-4">
@@ -51,7 +51,7 @@ export default function Home(){
 
             <div className="space-y-2 md:space-y-4">
                 <h2 className="text-purple-dark font-semibold leading-4">Monitor gift delivery as if
-                <span className="block">you're there</span>
+                <span className="block">you&apos;re there</span>
                 </h2>
                 <p className="text-xxs md:text-xs">Stop questioning if a recipient has received your gift. Track gift card delivery and open rates on the Moola App.</p>
             </div>

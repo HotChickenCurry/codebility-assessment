@@ -1,64 +1,65 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+const [isOpen, setIsOpen] = useState(false);
 
-  return (
+return (
     <div className="relative flex items-center justify-between p-4 md:max-w-4xl mx-auto">
-      {/* Logo */}
-      <a href="/" className="flex-shrink-0">
+    {/* Logo */}
+    <Link href="/" className="flex-shrink-0">
         <img
-          src="/Logo_Desktop_purple.svg"
-          alt="Logo"
-          className="w-24 object-contain"
+        src="/Logo_Desktop_purple.svg"
+        alt="Logo"
+        className="w-24 object-contain"
         />
-      </a>
+    </Link>
 
-      {/* Hamburger (mobile only) */}
-      <button id="navbar-mobile"
+    {/* Hamburger (mobile only) */}
+    <button id="navbar-mobile"
         className="block md:hidden text-2xl text-purple"
         onClick={() => setIsOpen(!isOpen)}
-      >
+    >
         <i className="fa-solid fa-bars"></i>
-      </button>
+    </button>
 
-      {/* Desktop Nav */}
-      <ul id="nav-desktop">
+    {/* Desktop Nav */}
+    <ul id="nav-desktop">
         <li className="group">
-          <a>Shop</a>
-          <span></span>
+            <Link href="/">Shop</Link>
+            <span></span>
         </li>
         <li className="group">
-          <a>How it Works</a>
-          <span></span>
+            <Link href="/">How it Works</Link>
+            <span></span>
         </li>
         <li className="group">
-          <a>Contact Us</a>
-          <span></span>
+            <Link href="/">Contact Us</Link>
+            <span></span>
         </li>
-      </ul>
+    </ul>
 
-      {/* Flag */}
-      <div className="hidden md:flex justify-between gap-x-2 items-baseline">
+    {/* Flag */}
+    <div className="hidden md:flex justify-between gap-x-2 items-baseline">
         <div className="space-x-1">
-          <img
+        <img
             src="/ca.svg"
             alt="canada_flag"
             className="w-4 object-contain inline"
-          />
-          <span className="font-poppins font-bold text-xxs text-right">CAD</span>
+        />
+        <span className="font-poppins font-bold text-xxs text-right">CAD</span>
         </div>
-      </div>
-
-      {/* Mobile Dropdown Menu */}
-      {isOpen && (
-        <ul id="nav-mobile">
-          <li><a>Shop</a></li>
-          <li><a>How it Works</a></li>
-          <li><a>Contact Us</a></li>
-        </ul>
-      )}
     </div>
-  );
+
+    {/* Mobile Dropdown Menu */}
+    {isOpen && (
+        <ul id="nav-mobile">
+        <li><a>Shop</a></li>
+        <li><a>How it Works</a></li>
+        <li><a>Contact Us</a></li>
+        </ul>
+    )}
+    </div>
+);
 }

@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/HotChickenCurry/codebility-assessment#readme",
+  "bugs": {
+    "url": "https://github.com/HotChickenCurry/codebility-assessment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HotChickenCurry/codebility-assessment.git"
+  },
+  "license": "ISC",
+  "author": "HotChickenCurry",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "method-override": "^3.0.0"
+  }
+}
